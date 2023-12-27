@@ -1548,16 +1548,31 @@ Trending Style
   margin-right: -285px;
 }
 
-.accessibility-icon {
+
+.accessibility-container {
   position: fixed;
   bottom: 285px;
-  /* Alterado de top para bottom */
   right: 12px;
-  cursor: pointer;
-  font-size: 38px;
-  color: #333;
 }
 
+.accessibility-icon {
+  width: 45px;
+  height: 45px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-right: -5px;
+}
+
+.accessibility-icon i {
+  font-size: 35px;
+  color: #333;
+}
+ 
 .accessibility-menu {
   display: none;
   position: fixed;
