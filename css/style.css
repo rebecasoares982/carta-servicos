@@ -148,7 +148,7 @@ a {
 }
 
 a:hover {
-  color: none;
+  color: #0a405f !important;
   text-decoration: none;
 }
 
@@ -1408,7 +1408,7 @@ Trending Style
 }
 
 .trending .item:hover .down-content h4 {
-  color: #00BFA6;
+  color: #0a405f;
 }
 
 .trending .item:hover .down-content a {
