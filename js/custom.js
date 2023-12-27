@@ -52,3 +52,12 @@
 
 
 */
+
+document.addEventListener("DOMContentLoaded", function () {
+  const accessibilityIcon = document.getElementById("accessibility-icon");
+  const accessibilityMenu = document.getElementById("accessibility-menu");
+
+  accessibilityIcon.addEventListener("click", function () {
+      accessibilityMenu.style.display = accessibilityMenu.style.display === "block" ? "none" : "block";
+  });
+});

@@ -1418,8 +1418,10 @@ Trending Style
 .thumb img {
   max-width: 100%;
   height: 280px;
-  width: auto; /* Garante que a largura seja ajustada automaticamente */
-  display: block; /* Remove espaços adicionais abaixo da imagem */
+  width: auto;
+  /* Garante que a largura seja ajustada automaticamente */
+  display: block;
+  /* Remove espaços adicionais abaixo da imagem */
 }
 
 .right-icons ul {
@@ -1501,10 +1503,14 @@ Trending Style
   background-color: #00BFA6;
   color: #fff;
   border: none;
-  border-top-left-radius: 0; /* Mantém o lado esquerdo reto */
-  border-bottom-left-radius: 0; /* Mantém o lado esquerdo reto */
-  border-top-right-radius: 12px; /* Arredonda o lado direito */
-  border-bottom-right-radius: 12px; /* Arredonda o lado direito */
+  border-top-left-radius: 0;
+  /* Mantém o lado esquerdo reto */
+  border-bottom-left-radius: 0;
+  /* Mantém o lado esquerdo reto */
+  border-top-right-radius: 12px;
+  /* Arredonda o lado direito */
+  border-bottom-right-radius: 12px;
+  /* Arredonda o lado direito */
   cursor: pointer;
   margin-left: -15px;
   height: 43px;
@@ -1523,20 +1529,65 @@ Trending Style
   display: inline-block;
   margin-right: 15px;
   vertical-align: top;
-  max-width: 100%; /* Ensure each item takes up the full available width */
+  max-width: 100%;
+  /* Ensure each item takes up the full available width */
 }
 
 .carousel-inner-no-gutters {
   display: flex;
 }
 
-.fa-chevron-left{
-  color:black;
+.fa-chevron-left {
+  color: black;
   margin-left: -285px;
 }
 
 
 .fa-chevron-right {
-  color:black;
+  color: black;
   margin-right: -285px;
+}
+
+.accessibility-icon {
+  position: fixed;
+  bottom: 285px;
+  /* Alterado de top para bottom */
+  right: 12px;
+  cursor: pointer;
+  font-size: 38px;
+  color: #333;
+}
+
+.accessibility-menu {
+  display: none;
+  position: fixed;
+  top: 67%;
+  transform: translateY(-67%);
+  right: 0;
+  background-color: #e9e9e9;
+  padding: 10px;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1000;
+  border-top-right-radius: 0;
+  /* Mantém o lado esquerdo reto */
+  border-bottom-right-radius: 0;
+  /* Mantém o lado esquerdo reto */
+  border-top-left-radius: 12px;
+  /* Arredonda o lado direito */
+  border-bottom-left-radius: 12px;
+  /* Arredonda o lado direito */
+}
+
+.accessibility-button {
+  background-color: #21658c;
+  color: #fff;
+  border: none;
+  padding: 8px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.accessibility-button:hover {
+  background-color: #777;
 }
