@@ -1572,7 +1572,7 @@ Trending Style
   font-size: 35px;
   color: #333;
 }
- 
+
 .accessibility-menu {
   display: none;
   position: fixed;
@@ -1605,4 +1605,37 @@ Trending Style
 
 .accessibility-button:hover {
   background-color: #777;
+}
+
+#btnTop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 12px;
+  font-size: 16px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 1.5;
+  outline: none;
+  color: #4a4a4a;
+  background-color: #efefef;
+}
+
+#btnTop i {
+  color: #333;
+  font-size: 22px;
+  vertical-align: middle;
+}
+
+#btnTop:hover {
+  background-color: #dddddd;
+  outline: none;
+}
+
+.btn-lg-square {
+  width: 48px;
+  height: 48px;
 }

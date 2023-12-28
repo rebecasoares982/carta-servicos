@@ -53,11 +53,30 @@
 
 */
 
+// Função menu de  acessibilidade
 document.addEventListener("DOMContentLoaded", function () {
   const accessibilityIcon = document.getElementById("accessibility-icon");
   const accessibilityMenu = document.getElementById("accessibility-menu");
 
   accessibilityIcon.addEventListener("click", function () {
       accessibilityMenu.style.display = accessibilityMenu.style.display === "block" ? "none" : "block";
+  });
+});
+ 
+//Função voltar ao topo
+document.addEventListener("DOMContentLoaded", function() {
+  var btnTop = document.getElementById("btnTop");
+
+  window.addEventListener("scroll", function() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      btnTop.style.display = "block";
+    } else {
+      btnTop.style.display = "none";
+    }
+  });
+
+  btnTop.addEventListener("click", function() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
   });
 });
