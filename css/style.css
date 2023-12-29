@@ -1,10 +1,4 @@
-/*
-
-TemplateMo 590 topic listing
-
-https://templatemo.com/tm-590-topic-listing
-
-*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
 
 /*---------------------------------------
   CUSTOM PROPERTIES ( VARIABLES )             
@@ -387,9 +381,9 @@ strong {
 }
 
 .navbar .dropdown-toggle::after {
-  content: "\f282";
+  /*content: "\f282";
+  font-family: bootstrap-icons !important;*/
   display: inline-block;
-  font-family: bootstrap-icons !important;
   font-size: var(--copyright-font-size);
   font-style: normal;
   font-weight: normal !important;
@@ -516,6 +510,11 @@ strong {
 .hero-section .input-group-text {
   background-color: transparent;
   border: 0;
+}
+
+.hero-section .input-group-text i {
+  color: #082535;
+  font-size: 17px
 }
 
 .hero-section input[type="search"] {
@@ -1490,6 +1489,10 @@ Trending Style
   align-items: center;
 }
 
+.search-container i {
+  font-size: 17px
+}
+
 .search-box {
   padding: 8px;
   width: 230px;
@@ -1640,14 +1643,19 @@ Trending Style
   height: 48px;
 }
 
-/*Seletor de cores - cliente */ 
+.ver-mais-noticias {
+  display: flex;
+  justify-content: end;
+}
+
+/*Seletor de cores - cliente */
 .selector-color-options {
   right: 20px;
   bottom: 20px;
   position: relative;
   z-index: 9;
   top: 10px;
-  padding-left: 25px; 
+  padding-left: 25px;
 }
 
 .selector-color-options a {
